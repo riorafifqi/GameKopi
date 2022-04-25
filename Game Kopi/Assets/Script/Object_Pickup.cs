@@ -50,29 +50,6 @@ public class Object_Pickup : Object_Interact
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.Euler(Vector3.zero);
         transform.localScale = Vector3.one;
-    }
-
-    void DropLeft(GameObject location)
-    {
-        picked = false;
-        isLeftFull = false;
-
-        transform.SetParent(location.transform);
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.Euler(Vector3.zero);
-        transform.localScale = Vector3.one;
-    }
-
-    void DropRight(GameObject location)
-    {
-        picked = false;
-        isRightFull = false;
-
-        transform.SetParent(location.transform);
-        transform.localPosition = Vector3.zero;
-        transform.localRotation = Quaternion.Euler(Vector3.zero);
-        transform.localScale = Vector3.one;
-    }
-        
+    }   
     
 }
